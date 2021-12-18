@@ -1,0 +1,35 @@
+.navigation-bar {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+}
+
+    .navigation-bar ::deep a {
+        color: #174282 !important;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 24px;
+        padding: 5px 25px 5px 25px;
+    }
+
+        .navigation-bar ::deep a.active {
+            color: #BB4100 !important;
+        }
+
+    .navigation-bar ::deep a::after {
+        display: block;
+        content: '';
+        width: 0;
+        height: 3px;
+        transition: ease-in-out .5s;
+    }
+
+    .navigation-bar ::deep a:hover::after {
+        background-color: #174282;
+        width: 100%;
+        transition: ease-in-out .5s;
+    }
+
+        .navigation-bar ::deep a.active:hover::after {
+            background-color: #BB4100 !important;
+        }

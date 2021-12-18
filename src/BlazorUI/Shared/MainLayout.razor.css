@@ -1,0 +1,99 @@
+.home-page {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 64px;
+    font-weight: bold;
+    margin-left: 30px;
+    color: #174282;
+    white-space: nowrap;
+}
+
+.logo ::deep a {
+    color: inherit !important;
+    text-decoration: none;
+}
+
+.logo:after {
+    content: 'pankunik .';
+    font-size: 64px;
+    font-weight: bold;
+    color: black;
+    opacity: .5;
+    position: absolute;
+    left: 27px;
+    padding-top: 3px;
+    z-index: -5;
+}
+
+.logo-dot {
+    color: black;
+}
+
+.main-content {
+    align-self: flex-end;
+}
+
+.background-circle {
+    border-radius: 50%;
+    display: block;
+    width: 500px;
+    height: 500px;
+    border: 25px solid rgba(236, 160, 117, .5);
+    position: absolute;
+}
+
+.first-circle {
+    left: 88vw;
+    top: 52vh;
+    width: min(8vw, 14vh);
+    height: min(14vh, 8vw);
+}
+
+.second-circle {
+    left: 66vw;
+    top: 8vh;
+    width: min(20vw, 35vh);
+    height: min(35vh, 20vw);
+}
+
+.third-circle {
+    left: 48vw;
+    top: 18vh;
+    width: min(38vw, 67vh);
+    height: min(67vh, 38vw);
+}
+
+.social-medias {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    height: 200px;
+    transform: translateY(-50%);
+}
+
+.social-medias > a:link {
+    color: white;
+    text-decoration: none;
+    transition: ease-in-out .7s;
+}
+
+.social-medias > a:hover {
+    color: gray;
+    transition: ease-in-out .7s;
+}
+
+.social-medias > a:link > i {
+    font-size: 36px;
+}
