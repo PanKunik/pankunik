@@ -1,0 +1,13 @@
+@using ViewModels
+<h4>@Project.Title</h4>
+
+<div style="background-color: white; color: black; width: 200px; height: 125px;">img</div>
+
+<p>
+    @Project.Description
+</p>
+
+@code {
+    [Parameter]
+    public ProjectViewModel Project { get; set; }
+}

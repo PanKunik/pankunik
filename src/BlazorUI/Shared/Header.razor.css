@@ -1,0 +1,37 @@
+.header {
+    color: var(--color-neutral-100);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('/images/bread-on-board.jpg')
+                no-repeat
+                center
+                rgba(0, 0, 0, .3);
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+
+.header-title {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top: 2em;
+    font-family: var(--ff-primary);
+}
+
+.header-sentence {
+    font-size: 1.35rem;
+    padding: 2em 0;
+    font-family: var(--ff-primary);
+}
+
+.hamburger-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1.5rem;
+}
+
+.navigation-bar {
+    background-color: var(--color-neutral-900);;
+    height: 1.25em;
+}

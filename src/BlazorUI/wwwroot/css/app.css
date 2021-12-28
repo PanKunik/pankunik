@@ -1,29 +1,28 @@
 ﻿@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&display=swap');
 
-html, body {
-    padding: 0;
+:root {
+    --color-neutral-100: #FFF;
+    --color-neutral-900: #000;
+    --ff-primary: 'Alegreya', serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing:border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     margin: 0;
-    font-family: 'Kreon', serif;
-    box-sizing: border-box;
 }
-
-#main-body {
-    background-color: #ECA075 !important;
-    overflow-x: hidden;
-}
-
-    #main-body:after {
-        display: block;
-        content: '';
-        width: 260vw;
-        height: 463vh;
-        background-color: #EDD6C9;
-        position: absolute;
-        top: -365vh;
-        left: -99vw;
-        border-radius: 50%;
-        z-index: -10;
-    }
 
 .valid.modified:not([type=checkbox]) {
     outline: 1px solid #26b050;
