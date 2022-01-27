@@ -1,4 +1,13 @@
-<div>
-    <div style="background-color: white; color: black; width: 200px; height: 125px;">Img 1</div>
-    <div style="background-color: white; color: black; width: 200px; height: 125px;">Img 2</div>
+@using BlazorUI.Services.ImageService
+@inject IImageService ImageService
+
+<div class="images-bar">
+    <div class="image-bar-first-row">
+        <div class="image-wrapper"><img src="@ImageService.GetRandomImage()"></div>
+        <div class="image-wrapper"><img src="@ImageService.GetRandomImage()"></div>
+    </div>
+    <div class="image-bar-second-row">
+        <div class="image-wrapper"><img src="@ImageService.GetRandomImage()"></div> <!-- <img src="@ImageService.GetRandomImage()"> -->
+        <div class="image-wrapper"><img src="@ImageService.GetRandomImage()"></div>
+    </div>
 </div>
