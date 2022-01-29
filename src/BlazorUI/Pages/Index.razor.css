@@ -19,7 +19,7 @@
 
 .greetings-before:before {
     content: 'Cześć';
-    font-size: 8.5rem;
+    font-size: 8.25rem;
 }
 
 .about-me-before:before {
@@ -36,9 +36,10 @@
     content: 'Hobby';
     font-size: 7rem;
 }
+
 .text-paragraph {
     font-size: .9em;
     font-family: var(--ff-primary);
     text-align: justify;
-    padding: 0 1em;
+    padding: 1em;
 }

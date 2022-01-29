@@ -16,7 +16,16 @@
     .images-bar div {
         width: 100%;
     }
-} */ /* For scaling image bar from 1x4 to 2x2 */
+    
+    .image-bar-second-row {
+        display: none !important;
+    }
+} 
+
+.image-bar-second-row {
+    display: flex;
+}
+*/ /* For scaling image bar from 1x4 to 2x2 */
 
 .images-bar div .image-wrapper {    
     width: 50%;
@@ -26,6 +35,10 @@
     display:flex;
     justify-content:center;
     align-items:center;
+}
+
+.image-bar-second-row {
+    display: none !important;
 }
 
 .image-wrapper img {

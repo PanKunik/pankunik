@@ -8,8 +8,8 @@ public class ImageService : IImageService
     {
         _imagePaths = new string[]
         {
-            @"images\bread-on-board.jpg",
             @"images\book-with-glasses.jpg",
+            @"images\bread-on-board.jpg",
             @"images\breads-with-wheat.jpg",
             @"images\falling-breads.jpg",
             @"images\javascript-code.jpg",

@@ -3,10 +3,29 @@
     <h1 class="header-title">PANKUNIK</h1>
     <h2 class="header-sentence">Programista z wypiekami</h2>
 
-    <div class="hamburger-icon">
-        <i class="fas fa-bars"></i>
+    <div class="menu-collapsible" @onclick=OnClick>
+        <div class="hamburger-icon @ShowMenuClass"></div>
     </div>
 </header>
 
 <div class="navigation-bar">
 </div>
+
+<div class="navigation-menu @ShowMenuClass">
+    <NavLink href="" Match="NavLinkMatch.All" class="nav-menu-item">Strona główna</NavLink>
+    <NavLink href="engineering" class="nav-menu-item">Projekt inżynierski</NavLink>
+    <NavLink href="projects" class="nav-menu-item">Moje projekty</NavLink>
+    <NavLink href="contact" class="nav-menu-item">Kontakt</NavLink>
+
+</div>
+
+@code {
+    private bool IsCollapsed = false;
+    private string ShowMenuClass = "";
+
+    private void OnClick()
+    {
+        ShowMenuClass = IsCollapsed ? "show-menu" : "";
+        IsCollapsed = !IsCollapsed;
+    }
+}

@@ -3,11 +3,24 @@
 
 <div class="images-bar">
     <div class="image-bar-first-row">
-        <div class="image-wrapper"><img src="@ImageService.GetRandomImage()"></div>
-        <div class="image-wrapper"><img src="@ImageService.GetRandomImage()"></div>
+        <div class="image-wrapper"><img src="@GetImage(ImageIndexes[0])"></div>
+        <div class="image-wrapper"><img src="@GetImage(ImageIndexes[1])"></div>
     </div>
     <div class="image-bar-second-row">
-        <div class="image-wrapper"><img src="@ImageService.GetRandomImage()"></div> <!-- <img src="@ImageService.GetRandomImage()"> -->
-        <div class="image-wrapper"><img src="@ImageService.GetRandomImage()"></div>
+        <div class="image-wrapper"><img src="@GetImage(ImageIndexes[2])"></div>
+        <div class="image-wrapper"><img src="@GetImage(ImageIndexes[3])"></div>
     </div>
 </div>
+
+@code {
+    [Parameter]
+    public int?[] ImageIndexes { get; set; }
+
+    public string GetImage(int? index)
+    {
+        if(index.HasValue)
+            return ImageService.GetImageAtIndex(index.Value);
+
+        return ImageService.GetRandomImage();
+    }
+}

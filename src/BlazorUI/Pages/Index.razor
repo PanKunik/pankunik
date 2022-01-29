@@ -11,7 +11,7 @@
             (i nie tylko) na naturalnym zakwasie oraz jazda na rowerze (zarówno zimą jak i latem).
         </p>
 
-        <ImagesBar />
+        <ImagesBar ImageIndexes=@firstImages />
     </section>
 
 
@@ -28,7 +28,7 @@
             Javascript, PHP czy języki zapytań MySQL oraz SQL.
         </p>
 
-        <ImagesBar />
+        <ImagesBar ImageIndexes=@secondImages />
     </section>
 
     <section>
@@ -41,7 +41,7 @@
             się programowania w C# oraz .NET.
         </p>
 
-        <ImagesBar />
+        <ImagesBar ImageIndexes=@thirdImages />
     </section>
 
     <section>
@@ -59,9 +59,13 @@
             jednym z najsmaczniejszych. Zapach, smak i radość to coś, czego nie zastąpi żadne kupne pieczywo.
         </p>
 
-        <ImagesBar />
+        <ImagesBar ImageIndexes=@fourthImages />
     </section>
 </article>
 
 @code {
+    private int?[] firstImages = {0, 2, null, null};
+    private int?[] secondImages = {3, 4, null, null};
+    private int?[] thirdImages = {5, 8, null, null};
+    private int?[] fourthImages = {9, 7, null, null};
 }
