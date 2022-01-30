@@ -33,6 +33,10 @@
     z-index: 2;
 }
 
+.menu-collapsible.show-menu {
+    position: fixed;
+}
+
 .hamburger-icon {
     position: relative;
     top: 11px;
