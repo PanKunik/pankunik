@@ -17,9 +17,6 @@
 mono_crash.*
 
 
-# Images
-/src/BlazorUI/wwwroot/images/*
-
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
