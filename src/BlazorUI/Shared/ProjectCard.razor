@@ -1,13 +1,34 @@
 @using ViewModels
-<h4>@Project.Title</h4>
 
-<div style="background-color: white; color: black; width: 200px; height: 125px;">img</div>
-
-<p>
-    @Project.Description
-</p>
+<div class="project-card">
+    <div class="project-card-title">@ProjectCardContent.Title</div>
+    <div class="project-card-image">
+        <img class="project-card-image-content" src="https://sm.mashable.com/mashable_in/seo/2/24308/24308_tz9f.jpg" />
+    </div>
+    <div class="project-card-description">
+        @ProjectCardContent.Description
+    </div>
+    <div class="project-card-buttons">
+        @if(!string.IsNullOrWhiteSpace(ProjectCardContent.WindowsDownloadLink))
+        {
+            <div class="project-card-button btn btn-outline-dark">Pobierz (Windows)</div>
+        }
+        @if(!string.IsNullOrWhiteSpace(ProjectCardContent.LinuxDownloadLink))
+        {
+            <div class="project-card-button btn btn-outline-dark">Pobierz (Linux)</div>
+        }
+        @if(!string.IsNullOrWhiteSpace(ProjectCardContent.MacDownloadLink))
+        {
+            <div class="project-card-button btn btn-outline-dark">Pobierz (Mac)</div>
+        }
+        @if(!string.IsNullOrWhiteSpace(ProjectCardContent.GithubLink))
+        {
+            <div class="project-card-button-github project-card-button btn btn-outline-dark">Zobacz na GitHub</div>
+        }
+    </div>
+</div>
 
 @code {
     [Parameter]
-    public ProjectViewModel Project { get; set; }
+    public ProjectViewModel ProjectCardContent { get; set; }
 }
