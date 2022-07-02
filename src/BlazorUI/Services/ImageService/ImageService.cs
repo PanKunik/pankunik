@@ -17,7 +17,7 @@ public class ImageService : IImageService
             @"images\laptop-with-plant.jpg",
             @"images\minified-code.jpg",
             @"images\open-crumb-bread.jpg",
-            @"images\variety-of-breads.jpg",
+            @"images\variety-of-breads.jpg"
         };
     }
 
