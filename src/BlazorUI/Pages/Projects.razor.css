@@ -1,0 +1,23 @@
+.paragraph-title {
+    font-size: 1.75rem;
+    font-family: var(--ff-primary);
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.paragraph-title:before {
+    font-family: var(--ff-primary);
+    font-weight: bold;
+    left: 0;
+    right: 0;
+    position: absolute;
+    transform: translateY(-0.5em);
+    color: rgba(73, 13, 13, 0.03);
+}
+
+.projects-before::before {
+    content: 'Projekty';
+    font-size: 5rem;
+}

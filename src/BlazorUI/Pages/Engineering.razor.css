@@ -1,0 +1,57 @@
+.paragraph-title {
+    font-size: 2rem;
+    font-family: var(--ff-primary);
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.paragraph-title:before {
+    font-family: var(--ff-primary);
+    font-weight: bold;
+    left: 0;
+    right: 0;
+    position: absolute;
+    transform: translateY(-0.575em);
+    color: rgba(73, 13, 13, 0.03);
+}
+
+.introduction-before:before {
+    content: 'Wstęp';
+    font-size: 7.25rem;
+}
+
+.paragraph-title.functions-before {
+    font-size: 1.6rem;
+}
+
+.functions-before:before {
+    content: 'Funckje';
+    font-size: 5.85rem;
+}
+
+.paragraph-main-title {
+    font-size: 1.8rem;
+    margin-top: .75em;
+    margin-bottom: .4em;
+}
+
+.engineering-title-quote {
+    text-align: center;
+    font-size: 1rem;
+    font-family: var(--ff-primary);
+}
+
+.text-paragraph {
+    font-size: .9em;
+    font-family: var(--ff-primary);
+    text-align: justify;
+    padding: 0 1em;
+}
+
+img.engineering-image {
+    margin: 1.5em .5em;
+    width: calc(100% - 1em);
+    box-shadow: 0 2px 4px rgba(.4, .4, .4, .5);
+}

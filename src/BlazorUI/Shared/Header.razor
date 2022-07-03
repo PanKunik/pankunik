@@ -1,0 +1,30 @@
+<header class="header">
+    <div class="header-overlay"></div>
+    <h1 class="header-title">PANKUNIK</h1>
+    <h2 class="header-sentence">Programista z wypiekami</h2>
+
+    <div class="menu-collapsible @ShowMenuClass" @onclick=ShowMenu>
+        <div class="hamburger-icon @ShowMenuClass"></div>
+    </div>
+</header>
+
+<div class="navigation-bar">
+</div>
+
+<div class="navigation-menu @ShowMenuClass">
+    <NavLink href="" Match="NavLinkMatch.All" @onclick=ShowMenu class="nav-menu-item">Strona główna</NavLink>
+    <NavLink href="projekt-inzynierski" @onclick=ShowMenu class="nav-menu-item">Projekt inżynierski</NavLink>
+    <NavLink href="projekty" @onclick=ShowMenu class="nav-menu-item">Moje projekty</NavLink>
+    @* <NavLink href="kontakt" @onclick=ShowMenu class="nav-menu-item">Kontakt</NavLink> *@
+</div>
+
+@code {
+    private bool IsCollapsed = false;
+    private string ShowMenuClass = "";
+
+    private void ShowMenu()
+    {
+        ShowMenuClass = IsCollapsed ? "show-menu" : "";
+        IsCollapsed = !IsCollapsed;
+    }
+}

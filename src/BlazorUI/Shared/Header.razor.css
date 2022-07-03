@@ -1,0 +1,126 @@
+.header {
+    color: var(--color-neutral-100);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('/images/bread-on-board.jpg')
+                no-repeat
+                center
+                rgba(0, 0, 0, .3);
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+
+.header-title {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top: 2em;
+    font-family: var(--ff-primary);
+}
+
+.header-sentence {
+    font-size: 1.35rem;
+    padding: 2em 0;
+    font-family: var(--ff-primary);
+}
+
+.menu-collapsible {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1.5rem;
+    height: 25px;
+    z-index: 2;
+}
+
+.menu-collapsible.show-menu {
+    position: fixed;
+}
+
+.hamburger-icon {
+    position: relative;
+    top: 11px;
+    background-color: white;
+    width: 25px;
+    height: 3px;
+    border-radius: 1px;
+    transition: all .15s ease-in-out;
+}
+
+.hamburger-icon:before, .hamburger-icon:after {
+    content: '';
+    width: 25px;
+    border-radius: 1px;
+    height: 3px;
+    display: block;
+    position: relative;
+    background-color: white;
+    transition: all .15s ease-in-out;
+}
+
+.hamburger-icon:before {
+    top: -8px;
+}
+
+.hamburger-icon:after {
+    top: 5px;
+}
+
+.show-menu {
+    background-color: transparent;
+}
+
+.show-menu::before {
+    top: -1px;
+    transform: translateY(50%) rotate(45deg);
+    transition: all .15s ease-in-out;
+}
+
+.show-menu:after {
+    top: -1px;
+    transform: translateY(-50%) rotate(-45deg);
+    transition: all .15s ease-in-out;
+}
+
+.navigation-bar {
+    background-color: var(--color-neutral-900);;
+    height: 1.25em;
+}
+
+.navigation-menu {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    padding-top: 7em;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-neutral-900);
+    transition: all .5s ease-in-out;
+}
+
+.navigation-menu.show-menu {
+    left: 0%;
+    transition: all .5s ease-in-out;
+}
+
+.navigation-menu ::deep a {
+    color: var(--color-neutral-100);
+    font-family: var(--ff-primary);
+    padding: .5em 0;
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--color-neutral-200);
+}
+
+.navigation-menu ::deep .active {
+    color: white;
+    font-weight: bold;
+}
+
+.navigation-menu ::deep a:hover {
+    color: var(--color-neutral-100);
+}

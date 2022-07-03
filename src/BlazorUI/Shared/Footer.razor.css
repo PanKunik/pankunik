@@ -1,0 +1,38 @@
+.footer {
+    width: 100%;
+    background-color: var(--color-neutral-900);
+    color: var(--color-neutral-100);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3em;
+    font-family: var(--ff-primary);
+}
+
+.footer-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.footer-sentence {
+    font-size: .95rem;
+    padding: .5em 0;
+}
+
+.footer-socials {
+    font-size: 2rem;
+    padding-bottom: .5em;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+}
+
+    .footer-socials > a {
+        color: inherit;
+    }
+
+.footer-copy {
+    font-size: 10px;
+    padding-bottom: .25em;
+}

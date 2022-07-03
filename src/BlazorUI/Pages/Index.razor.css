@@ -1,84 +1,45 @@
-.index-content {
-    position: relative;
-    display: flex;
-    margin-top: 200px;
-    flex-direction: row;
-    margin-left: 150px;
-    margin-right: 75px;
-}
-
-.left-side, .right-side {
-    width: 40%;
-}
-
-h2#index-title {
-    color: #BB4100;
+.paragraph-title {
+    font-size: 1.2rem;
+    font-family: var(--ff-primary);
     font-weight: bold;
     text-align: center;
+    margin-top: 3em;
+    margin-bottom: 1em;
 }
 
-p#index-description {
-    text-align: center;
-    font-weight: normal;
-    color: black;
-    font-size: 36px;
-    margin-bottom: 50px;
-}
-
-p#index-subdescription {
-    text-align: center;
+.paragraph-title:before {
+    font-family: var(--ff-primary);
     font-weight: bold;
-    color: black;
-    font-size: 20px;
-    margin-bottom: 50px;
-}
-
-.left-side ::deep a.contact-me-button {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border: 2px solid #BB4100;
-    height: 92px;
-    font-weight: bold;
-    font-size: 24px;
-    width: 222px;
-    border-radius: 20px;
-    color: #BB4100;
-    text-decoration: none;
-    text-align: center;
-    transition: ease-in-out .25s;
-}
-
-.left-side ::deep a.contact-me-button:hover {
-    background-color: #BB4100;
-    color: white;
-    transition: ease-in-out .25s;
-}
-
-.avatar-cards {
-    width: 430px;
-    height: 600px;
-    border: 3px solid #FCE5D7;
-    border-radius: 50px;
+    left: 0;
+    right: 0;
     position: absolute;
-    right: 7%;
-    transform-origin: 0 100%;
+    transform: translateY(-0.575em);
+    color: rgba(73, 13, 13, 0.03);
 }
 
-.first-avatar-card {
-    transform: rotateZ(-24deg);
+.greetings-before:before {
+    content: 'Cześć';
+    font-size: 8.25rem;
 }
 
-.second-avatar-card {
-    transform: rotateZ(-16deg);
+.about-me-before:before {
+    content: 'O mnie';
+    font-size: 6.6rem;
 }
 
-.third-avatar-card {
-    transform: rotateZ(-8deg);
-    text-align: center;
+.last-choice-before:before {
+    content: '.NET';
+    font-size: 8rem;
 }
 
-span#hello-word {
-    color: #41a0ee;
-    font-weight: bold;
+.hobby-before:before {
+    content: 'Hobby';
+    font-size: 7rem;
+}
+
+.text-paragraph {
+    font-size: .9em;
+    font-family: var(--ff-primary);
+    text-align: justify;
+    padding: 1em;
 }

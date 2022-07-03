@@ -1,29 +1,9 @@
 ﻿@inherits LayoutComponentBase
 
-<div class="background-circle first-circle"></div>
-<div class="background-circle second-circle"></div>
-<div class="background-circle third-circle"></div>
+<Header />
 
-<div class="home-page">
-    <div class="top-bar">
-        <div class="logo">
-            <NavLink href="" Match="NavLinkMatch.All">pankunik <span class="logo-dot">.</span></NavLink>
-        </div>
-        <div class="navigation">
-            <NavMenu />
-        </div>
-    </div>
+<main class="content">
+    @Body
+</main>
 
-    <main class="main-content">
-        <article class="content">
-            @Body
-        </article>
-    </main>
-</div>
-
-<div class="social-medias">
-    <a href="#"><i class="fab fa-facebook-square"></i></a>
-    <a href="#"><i class="fab fa-github"></i></a>
-    <a href="#"><i class="fab fa-linkedin"></i></a>
-    <a href="#"><i class="fab fa-instagram"></i></a>
-</div>
+<Footer />
