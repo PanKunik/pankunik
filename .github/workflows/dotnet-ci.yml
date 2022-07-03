@@ -20,6 +20,7 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
   docker:
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Set up QEMU
@@ -34,5 +35,6 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v3
         with:
+          context: .
           push: true
           tags: kunikone/pankunik:latest
