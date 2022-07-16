@@ -3,21 +3,21 @@ namespace BlazorUI.Services.ImageService;
 public class ImageService : IImageService
 {
     private readonly string[] _imagePaths;
-    
+
     public ImageService()
     {
         _imagePaths = new string[]
         {
-            @"images\book-with-glasses.jpg",
-            @"images\bread-on-board.jpg",
-            @"images\breads-with-wheat.jpg",
-            @"images\falling-breads.jpg",
-            @"images\javascript-code.jpg",
-            @"images\laptop-with-phones.jpg",
-            @"images\laptop-with-plant.jpg",
-            @"images\minified-code.jpg",
-            @"images\open-crumb-bread.jpg",
-            @"images\variety-of-breads.jpg"
+            @"images\book-with-glasses.webp",
+            @"images\bread-on-board.webp",
+            @"images\breads-with-wheat.webp",
+            @"images\falling-breads.webp",
+            @"images\javascript-code.webp",
+            @"images\laptop-with-phones.webp",
+            @"images\laptop-with-plant.webp",
+            @"images\minified-code.webp",
+            @"images\open-crumb-bread.webp",
+            @"images\variety-of-breads.webp"
         };
     }
 
@@ -34,7 +34,7 @@ public class ImageService : IImageService
 
         if(index > (imagesCount - 1) || index < 0)
             return "";
-        
+
         return _imagePaths[index];
     }
 }
