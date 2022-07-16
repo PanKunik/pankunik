@@ -1,7 +1,7 @@
 .paragraph-title {
     font-size: 2rem;
     font-family: var(--ff-primary);
-    font-weight: bold;
+    font-weight: 700;
     text-align: center;
     margin-top: 2em;
     margin-bottom: 1em;
@@ -9,7 +9,7 @@
 
 .paragraph-title:before {
     font-family: var(--ff-primary);
-    font-weight: bold;
+    font-weight: 700;
     left: 0;
     right: 0;
     position: absolute;

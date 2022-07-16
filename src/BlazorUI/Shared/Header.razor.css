@@ -13,7 +13,7 @@
 
 .header-title {
     font-size: 2rem;
-    font-weight: bold;
+    font-weight: 700;
     padding-top: 2em;
     font-family: var(--ff-primary);
 }
@@ -118,7 +118,7 @@
 
 .navigation-menu ::deep .active {
     color: white;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .navigation-menu ::deep a:hover {
