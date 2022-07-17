@@ -1,4 +1,4 @@
-namespace BlazorUI.Services.ImageService;
+namespace Blazor.Services.ImageService;
 
 public class ImageService : IImageService
 {
