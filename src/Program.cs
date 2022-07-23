@@ -7,8 +7,12 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
+builder.Services.AddWebOptimizer(pipeline =>
+{
+    pipeline.AddCssBundle("/css/bundle.css", sourceFiles: new string[] { "/wwwroot/css/*.css", "/obj/Release/net6.0/scopedcss/**/*.css" }).UseContentRoot();
+    pipeline.MinifyCssFiles("/css/bundle.css");
+});
 builder.Services.AddScoped<IImageService, ImageService>();
-
 
 var app = builder.Build();
 
@@ -22,6 +26,7 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseWebOptimizer();
 app.UseStaticFiles();
 
 app.UseRouting();
