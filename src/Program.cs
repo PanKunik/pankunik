@@ -1,6 +1,5 @@
-using Microsoft.AspNetCore.Components;
-using Microsoft.AspNetCore.Components.Web;
 using Blazor.Services.ImageService;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,7 +8,8 @@ builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddWebOptimizer(pipeline =>
 {
-    pipeline.AddCssBundle("/css/bundle.css", sourceFiles: new string[] { "/wwwroot/css/*.css", "/obj/Release/net6.0/scopedcss/**/*.css" }).UseContentRoot();
+    var assemblyConfiguration = typeof(Program).Assembly.GetCustomAttribute<AssemblyConfigurationAttribute>();
+    pipeline.AddCssBundle("/css/bundle.css", sourceFiles: new string[] { "/wwwroot/css/*.css", $"/obj/{assemblyConfiguration?.Configuration}/net6.0/scopedcss/**/*.css" }).UseContentRoot();
     pipeline.MinifyCssFiles("/css/bundle.css");
 });
 builder.Services.AddScoped<IImageService, ImageService>();
