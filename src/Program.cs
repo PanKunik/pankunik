@@ -9,7 +9,7 @@ builder.Services.AddServerSideBlazor();
 builder.Services.AddWebOptimizer(pipeline =>
 {
     var assemblyConfiguration = typeof(Program).Assembly.GetCustomAttribute<AssemblyConfigurationAttribute>();
-    pipeline.AddCssBundle("/css/bundle.css", sourceFiles: new string[] { "/wwwroot/css/*.css", $"/obj/{assemblyConfiguration?.Configuration}/net6.0/scopedcss/**/*.css" }).UseContentRoot();
+    pipeline.AddCssBundle("/css/bundle.css", sourceFiles: new string[] { "/wwwroot/css/*.css", "/wwwroot/Pages/*.css", "/wwwroot/Shared/*.css" }).UseContentRoot();
     pipeline.MinifyCssFiles("/css/bundle.css");
 });
 builder.Services.AddScoped<IImageService, ImageService>();
