@@ -82,3 +82,7 @@ h6 {
     .blazor-error-boundary::after {
         content: "An error has occurred."
     }
+
+    .hide-overflow {
+        overflow: hidden;
+    }

@@ -8,8 +8,14 @@ builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddWebOptimizer(pipeline =>
 {
-    var assemblyConfiguration = typeof(Program).Assembly.GetCustomAttribute<AssemblyConfigurationAttribute>();
-    pipeline.AddCssBundle("/css/bundle.css", sourceFiles: new string[] { "/wwwroot/css/*.css", "/wwwroot/Pages/*.css", "/wwwroot/Shared/*.css" }).UseContentRoot();
+    if(builder.Environment.IsDevelopment())
+    {
+        pipeline.AddCssBundle("/css/bundle.css", sourceFiles: new string[] { "/wwwroot/css/*.css", "/obj/Debug/net6.0/scopedcss/**/*.css" }).UseContentRoot();
+    }
+    else
+    {
+        pipeline.AddCssBundle("/css/bundle.css", sourceFiles: new string[] { "/wwwroot/css/*.css", "/wwwroot/Pages/*.css", "/wwwroot/Shared/*.css" }).UseContentRoot();
+    }
     pipeline.MinifyCssFiles("/css/bundle.css");
 });
 builder.Services.AddScoped<IImageService, ImageService>();

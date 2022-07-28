@@ -1,6 +1,8 @@
 @page "/projekt-inzynierski"
 
 <article>
+    <div id="lightbox" class="@GetShowLightboxClass()" @onclick='(() => CloseLightbox())'><img src="@activeImage" /></div>
+
     <section>
         <h3 class="paragraph-title paragraph-main-title">Projekt inżynierski</h3>
         <p class="engineering-title-quote">
@@ -8,7 +10,9 @@
             przedsiębiorstwa z branży rowerowej&rdquo;
         </p>
 
-        <img class="engineering-image" src="images/engineering-images/bikevision-about.webp" loading="eager"/>
+        <img class="engineering-image" 
+            @onclick='(() => ShowInLightbox("images/engineering-images/bikevision-about.webp"))'
+            src="images/engineering-images/bikevision-about.webp" loading="eager" />
     </section>
 
     <section>
@@ -38,7 +42,9 @@
             ma również możliwość sortowania listy wyników oraz sortowanie ich po cenie lub alfabetycznie.
         </p>
 
-        <img class="engineering-image" src="images/engineering-images/bikevision-products.webp" loading="lazy"/>
+        <img class="engineering-image"
+            @onclick='(() => ShowInLightbox("images/engineering-images/bikevision-products.webp"))'
+            src="images/engineering-images/bikevision-products.webp" loading="lazy" />
 
         <p class="text-paragraph">
             Po wybraniu przedmiotów, które użytkownik chce zamówić ma on możliwość przejścia do koszyka.
@@ -52,8 +58,10 @@
             jest jednorazowy, czy wielokrotnego użytku).
         </p>
 
-        <img class="engineering-image" src="images/engineering-images/bikevision-cart.webp" loading="lazy"/>
-        
+        <img class="engineering-image"
+            @onclick='(() => ShowInLightbox("images/engineering-images/bikevision-cart.webp"))'
+            src="images/engineering-images/bikevision-cart.webp" loading="lazy" />
+
         <p class="text-paragraph">
             W aplikacji istnieje możliwość porównywania produktów. Wystarczy dodać produkty do porównywarki
             i przejść do niej klikając przycisk "O". Ukazane zostaną wszystkie produkty oraz ich cechy w
@@ -64,18 +72,44 @@
             miejsc musi posiadać konto w aplikacji i być na nim zalogowany.
         </p>
 
-        <img class="engineering-image" src="images/engineering-images/bikevision-registration.webp" loading="lazy"/>
-        
+        <img class="engineering-image"
+            @onclick='(() => ShowInLightbox("images/engineering-images/bikevision-registration.webp"))'
+            src="images/engineering-images/bikevision-registration.webp" loading="lazy" />
+
         <p class="text-paragraph">
             Użytkownik aplikacji, który posiada konto użytkownika ma możliwość stworzenia zapytania
             serwisowego. Wymagane jest wybranie kategorii, która wstępnie określi rodzaj występującej
             usterki, wpisanie tytułu oraz krótkiego opisu występującej usterki. Po utworzeniu zlecenia
             użytkownik ma możliwość zobaczenia jaki jest jego status w panelu użytkownika. Dodatkowo może
             wymieniać się informacjami z pracownikiem serwisu, który przyjąl zlecenie serwisowe do
-            realizacji. 
+            realizacji.
         </p>
 
-        <img class="engineering-image" src="images/engineering-images/bikevision-service-order.webp" loading="lazy"/>
-        
+        <img class="engineering-image"
+            @onclick='(() => ShowInLightbox("images/engineering-images/bikevision-service-order.webp"))'
+            src="images/engineering-images/bikevision-service-order.webp" loading="lazy" />
+
     </section>
 </article>
+
+@code {
+    private string activeImage = "";
+    private bool _showLightbox = false;
+
+    private void ShowInLightbox(string imageSrc)
+    {
+        activeImage = imageSrc;
+        _showLightbox = true;
+    }
+
+    private void CloseLightbox()
+    {
+        activeImage = "";
+        _showLightbox = false;
+    }
+
+    private string GetShowLightboxClass()
+    {
+        return _showLightbox ? "show" : "hidden";
+    }
+}
