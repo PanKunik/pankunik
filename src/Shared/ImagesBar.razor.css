@@ -1,4 +1,5 @@
-.images-bar, .images-bar div {
+.images-bar,
+.images-bar div {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -7,7 +8,7 @@
 .images-bar div {
     flex-grow: 1;
     width: 100%;
-    
+
     /* width: 100%; */
     /* For scaling from 2x2 to 1x4 */
 }
@@ -25,20 +26,37 @@
 .image-bar-second-row {
     display: flex;
 }
-*/ /* For scaling image bar from 1x4 to 2x2 */
+*/
+/* For scaling image bar from 1x4 to 2x2 */
 
-.images-bar div .image-wrapper {    
-    width: 50%;
+.images-bar div .image-wrapper {
+    width: calc(100% / 4);
     height: 50vw;
     max-height: 50vh;
-    position:relative;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.image-bar-second-row {
-    display: none !important;
+@media (max-width: 1285px) {
+    .images-bar div .image-wrapper {
+        width: calc(100% / 2);
+    }
+
+    .third-image {
+        display: none !important;
+    }
+}
+
+@media (max-width: 1800px) {
+    .images-bar div .image-wrapper {
+        width: calc(100% / 3);
+    }
+
+    .fourth-image {
+        display: none !important;
+    }
 }
 
 .image-wrapper img {
