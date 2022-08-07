@@ -1,3 +1,8 @@
+.engineering-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .paragraph-title {
     font-size: 2rem;
     font-family: var(--ff-primary);

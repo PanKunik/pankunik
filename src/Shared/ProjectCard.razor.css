@@ -1,7 +1,6 @@
 .project-card {
     display: block;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin: 2em 0;
 }
 
 .project-card-title {

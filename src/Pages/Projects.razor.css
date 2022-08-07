@@ -1,3 +1,8 @@
+.projects-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .paragraph-title {
     font-size: 1.75rem;
     font-family: var(--ff-primary);

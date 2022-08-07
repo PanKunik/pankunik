@@ -42,4 +42,6 @@
     font-family: var(--ff-primary);
     text-align: justify;
     padding: 1em;
+    max-width: 1200px;
+    margin: 0 auto;
 }
