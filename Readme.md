@@ -11,8 +11,8 @@
 - `smuget` is a smart home budget 🏡 application for managing your finances 💵. It allows users to create their monthly billings and add plans 🌤️ , incomes ➕ and expenses ➖ for tracking their budget. For more information and code visit my repo [![smuget](https://img.shields.io/badge/smuget-006600?logo=github&logoColor=ffffff)](https://github.com/PanKunik/smuget).
 
 ## 🌐 Visit my socials
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/https://www.instagram.com/pankunik) to find many photos of my recently discovered hobby - sourdough bread! It's yummy and healthy. \
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/https://pl.linkedin.com/in/patryk-kunicki-a551401a9) to view my work profile and get in touch with me 🙂 \
+[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://www.instagram.com/pankunik) to find many photos of my recently discovered hobby - sourdough bread! It's yummy and healthy. \
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://pl.linkedin.com/in/patryk-kunicki-a551401a9) to view my work profile and get in touch with me 🙂 \
 [![Website](https://img.shields.io/badge/Website-512BD4?logo=blazor)](https://pankunik.pl) to find more informations about my hobbies and my adventure with programming.
 
 ## 💻 Tech stack
