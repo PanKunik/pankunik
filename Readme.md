@@ -8,7 +8,7 @@
 
 ## 👇 Current project
 
-- `smuget` is a smart home budget 🏡 application for managing your finances 💵. It allows users to create their monthly billings and add plans 🌤️ , incomes ➕ and expenses ➖ for tracking their budget.
+- `smuget` is a smart home budget 🏡 application for managing your finances 💵. It allows users to create their monthly billings and add plans 🌤️ , incomes ➕ and expenses ➖ for tracking their budget. For more information and code visit my repo [![smuget](https://img.shields.io/badge/smuget-006600?logo=github&logoColor=ffffff)](https://github.com/PanKunik/smuget).
 
 ## 🌐 Visit my socials
 [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/https://www.instagram.com/pankunik) to find many photos of my recently discovered hobby - sourdough bread! It's yummy and healthy. \
@@ -18,11 +18,11 @@
 ## 💻 Tech stack
 
 **Development:** \
-![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white)
+![C#](https://img.shields.io/badge/c%23-512BD4.svg?style=for-the-badge&logo=c-sharp&logoColor=white)
 ![.Net](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white)
-![VSCode](https://img.shields.io/badge/VSCode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
 ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
-![MicrosoftSQLServer](https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white) \
+![MicrosoftSQLServer](https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white)
+![VSCode](https://img.shields.io/badge/VSCode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white) \
 **DevOps:** \
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![OVH](https://img.shields.io/badge/OVH-123F6D?style=for-the-badge&logo=ovh&logoColor=white)
