@@ -36,8 +36,8 @@
 ![GitLab](https://img.shields.io/badge/GitLab-FC6D26?style=for-the-badge&logo=gitlab&logoColor=white)
 ![GIT](https://img.shields.io/badge/Git-fc6d26?style=for-the-badge&logo=git&logoColor=white)
 
-## 📊 GitHub Stats
+<!-- ## 📊 GitHub Stats
 ![](https://github-readme-stats.vercel.app/api?username=pankunik&theme=dark&hide_border=true&include_all_commits=true&count_private=true)
 ![](https://github-readme-streak-stats.herokuapp.com/?user=pankunik&theme=dark&hide_border=true)
 
-Yeah.. I know they are not so exciting - I'm working on that 😄
+Yeah.. I know they are not so exciting - I'm working on that 😄 -->
