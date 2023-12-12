@@ -6,17 +6,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 3em;
+    padding-top: 2.65em;
     font-family: var(--ff-primary);
 }
 
 .footer-title {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 700;
 }
 
 .footer-sentence {
-    font-size: .95rem;
+    font-size: .9rem;
     padding: .5em 0;
 }
 

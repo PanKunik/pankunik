@@ -3,8 +3,10 @@
     font-family: var(--ff-primary);
     font-weight: 700;
     text-align: center;
+    margin: auto;
     margin-top: 3em;
     margin-bottom: 1em;
+    max-width: 1200px;
 }
 
 .paragraph-title:before {
@@ -19,27 +21,29 @@
 
 .greetings-before:before {
     content: 'Cześć';
-    font-size: 8.25rem;
+    font-size: 6.25rem;
 }
 
 .about-me-before:before {
     content: 'O mnie';
-    font-size: 6.6rem;
+    font-size: 6rem;
 }
 
 .last-choice-before:before {
     content: '.NET';
-    font-size: 8rem;
+    font-size: 7rem;
 }
 
 .hobby-before:before {
     content: 'Hobby';
-    font-size: 7rem;
+    font-size: 6.25rem;
 }
 
 .text-paragraph {
     font-size: .9em;
     font-family: var(--ff-primary);
     text-align: justify;
-    padding: 1em;
+    padding: 1rem;
+    margin: auto;
+    max-width: 1200px;
 }

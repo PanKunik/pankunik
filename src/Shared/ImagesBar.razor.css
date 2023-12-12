@@ -2,10 +2,11 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .images-bar div {
-    flex-grow: 1;
     width: 100%;
     
     /* width: 100%; */

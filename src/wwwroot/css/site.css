@@ -24,6 +24,30 @@ p {
     margin: 0;
 }
 
+@media (max-width: 576px) {
+    html {
+        font-size: 16px; /* Change this value to adjust the site size */
+    }
+}
+
+@media (min-width: 576.333px) and (max-width: 768px) {
+    html {
+        font-size: 18px; /* Change this value to adjust the site size */
+    }
+}
+
+@media (min-width: 768.333px) and (max-width: 992px) {
+    html {
+        font-size: 20px; /* Change this value to adjust the site size */
+    }
+}
+
+@media (min-width: 992.333px) {
+    html {
+        font-size: 22px;
+    }
+}
+
 body {
     line-height: 1.5;
 }

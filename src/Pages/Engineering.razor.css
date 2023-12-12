@@ -3,8 +3,10 @@
     font-family: var(--ff-primary);
     font-weight: 700;
     text-align: center;
+    margin: auto;
     margin-top: 2em;
     margin-bottom: 1em;
+    max-width: 1200px;
 }
 
 .paragraph-title:before {
@@ -33,13 +35,13 @@
 
 .paragraph-main-title {
     font-size: 1.8rem;
-    margin-top: .75em;
+    margin-top: 2em;
     margin-bottom: .4em;
 }
 
 .engineering-title-quote {
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-family: var(--ff-primary);
 }
 
@@ -47,14 +49,20 @@
     font-size: .9em;
     font-family: var(--ff-primary);
     text-align: justify;
+    margin: auto;
+    max-width: 1200px;
     padding: 0 1em;
 }
 
 img.engineering-image {
-    margin: 1.5em .5em;
-    width: calc(100% - 1em);
+    display: block;
+    margin: auto;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    width: calc(100% - 2em);
     box-shadow: 0 2px 4px rgba(.4, .4, .4, .5);
     cursor: zoom-in;
+    max-width: 1200px;
 }
 
 #lightbox {
