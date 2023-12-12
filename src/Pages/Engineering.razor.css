@@ -3,8 +3,10 @@
     font-family: var(--ff-primary);
     font-weight: 700;
     text-align: center;
+    margin: auto;
     margin-top: 2em;
     margin-bottom: 1em;
+    max-width: 1200px;
 }
 
 .paragraph-title:before {
@@ -39,7 +41,7 @@
 
 .engineering-title-quote {
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-family: var(--ff-primary);
 }
 
@@ -48,13 +50,19 @@
     font-family: var(--ff-primary);
     text-align: justify;
     padding: 0 1em;
+    margin: auto;
+    max-width: 1200px;
 }
 
 img.engineering-image {
-    margin: 1.5em .5em;
+    display: block;
+    margin: auto;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
     width: calc(100% - 1em);
     box-shadow: 0 2px 4px rgba(.4, .4, .4, .5);
     cursor: zoom-in;
+    max-width: 1000px;
 }
 
 #lightbox {

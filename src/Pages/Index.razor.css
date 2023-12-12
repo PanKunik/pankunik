@@ -3,8 +3,10 @@
     font-family: var(--ff-primary);
     font-weight: 700;
     text-align: center;
+    margin: auto;
     margin-top: 3em;
     margin-bottom: 1em;
+    max-width: 1200px;
 }
 
 .paragraph-title:before {
@@ -42,4 +44,6 @@
     font-family: var(--ff-primary);
     text-align: justify;
     padding: 1em;
+    margin: auto;
+    max-width: 1200px;
 }
