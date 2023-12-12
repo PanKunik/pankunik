@@ -1,10 +1,10 @@
 .paragraph-title {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-family: var(--ff-primary);
     font-weight: 700;
     text-align: center;
-    margin-top: 3em;
-    margin-bottom: 1em;
+    margin-top: 2.75em;
+    margin-bottom: .8em;
 }
 
 .paragraph-title:before {
@@ -38,7 +38,7 @@
 }
 
 .text-paragraph {
-    font-size: .9em;
+    font-size: 1.3em;
     font-family: var(--ff-primary);
     text-align: justify;
     padding: 1em;
