@@ -9,17 +9,18 @@
                 rgba(0, 0, 0, .3);
     background-size: cover;
     background-blend-mode: overlay;
+    font-size: 16px;
 }
 
 .header-title {
-    font-size: 2rem;
+    font-size: 2em;
     font-weight: 700;
     padding-top: 2em;
     font-family: var(--ff-primary);
 }
 
 .header-sentence {
-    font-size: 1.35rem;
+    font-size: 1.35em;
     padding: 2em 0;
     font-family: var(--ff-primary);
 }
@@ -84,7 +85,7 @@
 
 .navigation-bar {
     background-color: var(--color-neutral-900);;
-    height: 1.25em;
+    height: 20px;
 }
 
 .navigation-menu {
