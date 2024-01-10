@@ -1,4 +1,5 @@
 @page "/projekt-inzynierski"
+<PageTitle>@_title</PageTitle>
 
 <article>
     <div id="lightbox" class="@GetShowLightboxClass()" @onclick='(() => CloseLightbox())'><img src="@activeImage" /></div>
@@ -93,6 +94,7 @@
 </article>
 
 @code {
+    private string _title = "Projekt inżynierski";
     private string activeImage = "";
     private bool _showLightbox = false;
 

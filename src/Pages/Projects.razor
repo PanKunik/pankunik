@@ -1,6 +1,7 @@
 @using System.Collections.Generic
 @using ViewModels
 @page "/projekty"
+<PageTitle>@_title</PageTitle>
 
 <article>
     <h3 class="paragraph-title projects-before">Moje projekty</h3>
@@ -23,6 +24,8 @@
 </article>
 
 @code {
+    private string _title = "Moje projekty";
+
     public IList<ProjectViewModel> ProjectsViewModels { get; set; } = new List<ProjectViewModel>()
     {
         new ProjectViewModel("Bikevision", "Praktyczną częścią mojej pracy inżynierskiej jest projekt o nazwie Bikevision. Jest to aplikacja sieciowa stworzona w technologii ASP.NET MVC (.NET Framework). Zadaniem aplikacji jest umożliwienie przeglądania produktów z różnych kategorii, filtrowanie oraz sortowanie ich, składanie zamówień na wybrane produkty. W aplikacji jest możliwość porównywania produktów z wyszczególnieniem różnic. Po złożeniu zamówienia można wystawić opinię produktom, które zostały zakupione. Dodatkową funkcją w aplikacji jest możliwość złożenia zapytania serwisowego. Wtedy użytkownik ma możliwość kontaktu z pracownikiem serwisu poprzez system wiadomości. Więcej szczegółów na temat tego projektu w zakładce \"Projekt inżynierski\".", @"images\engineering-images\bikevision-homepage.webp", null, null, null, "https://github.com/PanKunik/bikevision-aspnet-mvc", new[] { "C#", ".NET Framework", "ASP.NET" }),
