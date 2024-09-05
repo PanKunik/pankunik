@@ -1,6 +1,6 @@
 # 💫 About me
 - 👋 Hello, GitHub! I'm @PanKunik and I'm a .NET Developer.
-- 💻 Programming is my day-to-day work in JAS-FBG S.A. company.
+- 💻 Programming is my day-to-day work in BMS Sp. z o. o. company.
 - 🔭 Working on my "pet-project" called `smuget` (more about it below).
 - 🌱 Curently I'm learning about `Domain-Driven Design`, `Clean Architecture` and trying to get better in `.NET`, `Docker` and software testing every day I'm coding.
 - 🍞 In my spare time I bake a lot of sourdough bread. <br /> 🚴‍♂️ When there is a good weather I like to go for a ride on my bicycle. <br /> 🏂 If there is cold outside and snowy I go snowboarding!
