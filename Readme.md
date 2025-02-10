@@ -1,14 +1,15 @@
 # 💫 About me
 - 👋 Hello, GitHub! I'm @PanKunik and I'm a .NET Developer.
 - 💻 Programming is my day-to-day work in BMS Sp. z o. o. company.
-- 🔭 Working on my "pet-project" called `smuget` (more about it below).
-- 🌱 Curently I'm learning about `Domain-Driven Design`, `Clean Architecture` and trying to get better in `.NET`, `Docker` and software testing every day I'm coding.
+- 🔭 Working on my "pet-projects" called `smuget` and `do-it` (more about them below).
+- 🌱 Curently I'm learning Angular with my projects - trying to become Fullstack Dev.
 - 🍞 In my spare time I bake a lot of sourdough bread. <br /> 🚴‍♂️ When there is a good weather I like to go for a ride on my bicycle. <br /> 🏂 If there is cold outside and snowy I go snowboarding!
 - ⚡ Fun fact: `System.ValueType` is a reference type!
 
 ## 👇 Current project
 
-- `smuget` is a smart home budget 🏡 application for managing your finances 💵. It allows users to create their monthly billings and add plans 🌤️ , incomes ➕ and expenses ➖ for tracking their budget. For more information and code visit my repo [![smuget](https://img.shields.io/badge/smuget-006600?logo=github&logoColor=ffffff)](https://github.com/PanKunik/smuget).
+- `smuget` is a smart home budget 🏡 application for managing your finances 💵. It allows users to create their monthly billings and add plans 🌤️ , incomes ➕ and expenses ➖ for tracking their budget. For more information and code visit my repo [![smuget](https://img.shields.io/badge/smuget-006600?logo=github&logoColor=ffffff)](https://github.com/PanKunik/smuget),
+- `do-it` is yet another to-do app 😃, but with more functionality (there would be a calendar view for tasks and timers for tracking elapsed time). This project is mainly for my Angular learning. I want to be more full-stacked. For more information and code visit my repos [![do-it-api](https://img.shields.io/badge/do_it_api-000066?logo=github&logoColor=ffffff)](https://github.com/PanKunik/do-it-api)[![do-it-frontend](https://img.shields.io/badge/do_it_frontend-660000?logo=github&logoColor=ffffff)](https://github.com/PanKunik/do-it-frontend);
 
 ## 🌐 Visit my socials
 [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://www.instagram.com/pankunik) to find many photos of my recently discovered hobby - sourdough bread! It's yummy and healthy. \
